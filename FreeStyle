@@ -1,0 +1,31 @@
+Started by user Mohamed Houssem Beltifa
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/FreeStyle
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/HoussemBeltifa/tp2_jenkins.git
+ > git init /var/lib/jenkins/workspace/FreeStyle # timeout=10
+Fetching upstream changes from https://github.com/HoussemBeltifa/tp2_jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/HoussemBeltifa/tp2_jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/HoussemBeltifa/tp2_jenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision cd9bd73eaa34fac06bb380deb9ce341314fe049a (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cd9bd73eaa34fac06bb380deb9ce341314fe049a # timeout=10
+Commit message: "Initial commit"
+First time build. Skipping changelog.
+[FreeStyle] $ /bin/sh -xe /tmp/jenkins16073520047907015648.sh
++ echo Récupération du code source
+Récupération du code source
+[FreeStyle] $ /bin/sh -xe /tmp/jenkins10140261023974860637.sh
++ echo Build du projet
+Build du projet
+[FreeStyle] $ /bin/sh -xe /tmp/jenkins2702341155104408783.sh
++ echo Déploiement du projet
+Déploiement du projet
+Finished: SUCCESS
